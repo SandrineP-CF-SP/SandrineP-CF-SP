@@ -1,0 +1,345 @@
+<!competences html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandrine Poutier | Compétences</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            overflow-x: hidden;
+        }
+        .slide-container {
+            width: 1100px;
+            min-height: 720px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .title {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .skill-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+        }
+        .skill-card::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .skill-card:hover::before {
+            transform: scaleX(1);
+        }
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1);
+        }
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .decoration-circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container bg-white shadow-2xl my-10 rounded-2xl overflow-hidden flex flex-col">
+        <!-- Decorative elements -->
+        <div class="decoration-circle bg-indigo-100 w-64 h-64 -top-20 -right-20 opacity-50"></div>
+        <div class="decoration-circle bg-purple-100 w-96 h-96 -bottom-40 -left-40 opacity-30"></div>
+        
+        <!-- Header with navigation -->
+        <header class="p-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold">
+                    SP
+                </div>
+                <span class="ml-3 text-gray-600">Portfolio Professionnel</span>
+            </div>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">Accueil</a>
+                <a href="a-propos.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">À propos</a>
+                <a href="competences.html" class="nav-button px-3 py-2 rounded-md text-indigo-600 font-medium border-b-2 border-indigo-600">Compétences</a>
+                <a href="experiences.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">Expériences</a>
+                <a href="formations.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">Formations</a>
+                <a href="projets-dev.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">Projets</a>
+                <a href="contact.html" class="nav-button px-3 py-2 rounded-md text-gray-600 hover:text-indigo-600">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main class="flex-grow p-8">
+            <h1 class="title text-4xl font-bold mb-6 text-center">
+                <span class="gradient-text">Mes Compétences</span>
+            </h1>
+            
+            <div class="grid grid-cols-3 gap-6 mb-8">
+                <!-- Compétences pédagogiques -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-chalkboard-teacher text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences Pédagogiques</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Transmission de connaissances et savoir-faire</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Animation de groupes et ateliers</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Adaptation des méthodes d'enseignement</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Conception de supports pédagogiques</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Formation</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Pédagogie</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Animation</span>
+                    </div>
+                </div>
+                
+                <!-- Compétences commerciales -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-handshake text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences Commerciales</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Techniques de vente et négociation</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Gestion de la relation client</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Conseil et accompagnement personnalisé</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Présentation et démonstration de produits</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Vente</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Négociation</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Conseil</span>
+                    </div>
+                </div>
+                
+                <!-- Compétences en gestion -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-tasks text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences en Gestion</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Gestion d'entreprise</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Opérations comptables et administratives</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Gestion de plannings et organisation</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Suivi de projets</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Administration</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Organisation</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Planification</span>
+                    </div>
+                </div>
+                
+                <!-- Compétences en management -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-users-cog text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences en Management</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Direction d'équipe commerciale</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Coordination et motivation d'équipe</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Gestion des ressources humaines</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Leadership</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Motivation</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Coordination</span>
+                    </div>
+                </div>
+                
+                <!-- Compétences techniques -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-tools text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences Techniques</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Connaissance des secteurs variés (esthétique, aménagement, télécoms, hôtellerie, cuisine)</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Maîtrise des outils bureautiques</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Logiciels spécialisés</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Polyvalence</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Bureautique</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Logiciels</span>
+                    </div>
+                </div>
+                
+                <!-- Compétences relationnelles -->
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center skill-icon">
+                            <i class="fas fa-comments text-2xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-gray-800">Compétences Relationnelles</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Communication interpersonnelle</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Écoute active et empathie</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Adaptation à différents publics</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <p class="text-gray-600">Gestion de situations complexes</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Communication</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Empathie</span>
+                        <span class="skill-tag text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">Adaptabilité</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Compétences transversales -->
+            <div class="bg-indigo-50 rounded-xl p-6 shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Compétences Transversales</h3>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-sync-alt text-xl text-indigo-600"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Polyvalence et adaptabilité</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-puzzle-piece text-xl text-indigo-600"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Analyse et résolution de problèmes</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-lightbulb text-xl text-indigo-600"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Créativité et innovation pédagogique</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-search text-xl text-indigo-600"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Veille technologique et sectorielle</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="p-6 text-center text-gray-500 text-sm">
+            <p>"Apprendre tout au long de la vie est la clé du succès !"</p>
+        </footer>
+    </div>
+</body>
+</html>

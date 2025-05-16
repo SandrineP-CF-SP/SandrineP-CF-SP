@@ -1,0 +1,144 @@
+<!index html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandrine Poutier | Formatrice Professionnelle pour Adultes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            overflow-x: hidden;
+        }
+        .slide-container {
+            width: 1100px;
+            min-height: 720px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .title {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .quote-box {
+            position: relative;
+        }
+        .quote-box::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            position: absolute;
+            left: -20px;
+            top: -40px;
+            color: rgba(79, 70, 229, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .contact-info i {
+            transition: all 0.3s ease;
+        }
+        .contact-info:hover i {
+            transform: scale(1.2);
+        }
+        .decoration-circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container bg-white shadow-2xl my-10 rounded-2xl overflow-hidden flex flex-col">
+        <!-- Decorative elements -->
+        <div class="decoration-circle bg-indigo-100 w-64 h-64 -top-20 -right-20 opacity-50"></div>
+        <div class="decoration-circle bg-purple-100 w-96 h-96 -bottom-40 -left-40 opacity-30"></div>
+        
+        <!-- Header with navigation -->
+        <header class="p-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold">
+                    SP
+                </div>
+                <span class="ml-3 text-gray-600">Consultance & Formations</span>
+            </div>
+            <div class="contact-info flex items-center text-gray-600">
+                <a href="tel:0767158945" class="flex items-center mx-3 hover:text-indigo-600">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    07 67 15 89 45
+                </a>
+                <a href="mailto:cf-sp06@hotmail.com" class="flex items-center mx-3 hover:text-indigo-600">
+                    <i class="fas fa-envelope mr-2"></i>
+                    cf-sp06@hotmail.com
+                </a>
+                <div class="flex items-center mx-3">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Av. Sidi Brahim, 06130 Grasse
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="flex-grow flex flex-col items-center justify-center px-20 py-10 text-center">
+            <h1 class="title text-5xl font-bold mb-4">
+                <span class="gradient-text">Sandrine Poutier</span>
+            </h1>
+            <h2 class="text-2xl text-gray-700 mb-10">Formatrice Professionnelle pour Adultes</h2>
+            
+            <div class="quote-box max-w-3xl mb-12 p-6">
+                <p class="italic text-xl text-gray-600">
+                    "Imaginez un monde où chaque apprenant se sent valorisé et engagé dans son apprentissage."
+                </p>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <div class="grid grid-cols-3 gap-6 w-full max-w-5xl">
+                <a href="a-propos.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-user-circle text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">À propos de moi</span>
+                </a>
+                <a href="competences.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-chart-line text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">Compétences</span>
+                </a>
+                <a href="experiences.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-briefcase text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">Expériences professionnelles</span>
+                </a>
+                <a href="formations.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-graduation-cap text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">Formations</span>
+                </a>
+                <a href="projets-dev.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-lightbulb text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">Projets et réalisations</span>
+                </a>
+                <a href="contact.html" class="nav-button bg-white px-6 py-4 rounded-xl shadow-md flex flex-col items-center justify-center hover:text-indigo-600 border border-gray-100">
+                    <i class="fas fa-envelope-open-text text-2xl mb-2 text-indigo-500"></i>
+                    <span class="font-medium">Contact</span>
+                </a>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="p-6 text-center text-gray-500 text-sm">
+            <p>Apprendre tout au long de la vie est la clé du succès !</p>
+        </footer>
+    </div>
+</body>
+</html>
